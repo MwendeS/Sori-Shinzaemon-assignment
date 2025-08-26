@@ -59,10 +59,21 @@ plt.plot(thickness_list, color="blue", linestyle=":", linewidth=2, label="Blue d
 plt.legend(fontsize=12) # Show legend
 plt.show()              # Show graph
 #%%
-echo "# paper-folding-assignment" >> README.md
+# 1st create new repo
+# create local repo
+mkdir "C:/Users/admin/DevWorkspace/DSMLE_Course /ComprehensiveExercises"
+
+cd "C:\Users\admin\DevWorkspace\DSMLE_Course"
+pwd
 git init
-git add README.md
-git commit -m "first commit"
+New-Item paper_folding.md
+ls
+echo “## This is a paper-folding exercise file.” >> paper_folding_assignment.md
+git status
+git add paper_folding.md
+git status
+git commit -m “Created paper_folding-assignment.md”
 git branch -M main
 git remote add origin git@github.com:MwendeS/paper-folding-assignment.git
 git push -u origin main
+
